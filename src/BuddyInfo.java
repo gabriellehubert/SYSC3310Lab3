@@ -5,7 +5,7 @@ public class BuddyInfo
 	
 	public static void main(String args[])
 	{
-	
+		System.out.println("AddressBook");
 	}
 	
 	public BuddyInfo(String name, String address, String phoneNumber)

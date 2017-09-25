@@ -9,7 +9,6 @@ public class BuddyInfo
 		AddressBook book = new AddressBook();
 		book.addBuddy(buddy);
 		book.removeBuddy(buddy);
-		System.out.println("Test complete");
 	}
 	
 	public BuddyInfo(String name, String address, String phoneNumber)

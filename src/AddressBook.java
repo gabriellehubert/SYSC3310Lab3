@@ -5,6 +5,11 @@ public class AddressBook
 	private ArrayList<BuddyInfo> book;
 	private int size;
 
+	public static void main(String args[])
+	{
+		System.out.println("Address Book");
+	}
+	
 	public AddressBook() {
 		book = new ArrayList<BuddyInfo>();
 		size = 0;

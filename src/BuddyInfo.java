@@ -3,14 +3,6 @@ public class BuddyInfo
 {
 	private String name, address, phoneNumber;
 	
-	public static void main(String args[])
-	{
-		BuddyInfo buddy = new BuddyInfo("Todd", "1 Colonel By Drive", "123 456 789");
-		AddressBook book = new AddressBook();
-		book.addBuddy(buddy);
-		book.removeBuddy(buddy);
-	}
-	
 	public BuddyInfo(String name, String address, String phoneNumber)
 	{
 		this.name = name;

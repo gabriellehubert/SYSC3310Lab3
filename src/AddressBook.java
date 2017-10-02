@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class AddressBook 
 {
 	private ArrayList<BuddyInfo> book;
-	private int size;
 
 	public static void main(String args[])
 	{
@@ -15,7 +14,6 @@ public class AddressBook
 	
 	public AddressBook() {
 		book = new ArrayList<BuddyInfo>();
-		size = 0;
 	}
 	
 	public ArrayList<BuddyInfo> getBook() {
@@ -29,7 +27,6 @@ public class AddressBook
 	public void addBuddy(BuddyInfo buddy)
 	{
 		book.add(buddy);
-		size++;
 	}
 	
 	public void removeBuddy(BuddyInfo buddy)
@@ -38,23 +35,18 @@ public class AddressBook
 		{
 			System.out.println("Buddy not found.");
 		}
-		else
-		{
-			size--;
-		}
 		
 	}
 	
 	public void removeBuddy(int index)
 	{
-		if(index > size - 1)
+		if(index > book.size() - 1 || index < 0)
 		{
 			System.out.println("Index out of range.");		
 		}
 		else
 		{
 			book.remove(index);
-			size--;
 		}
 		
 	}

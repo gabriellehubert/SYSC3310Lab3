@@ -9,7 +9,9 @@ public class AddressBook
 		BuddyInfo buddy = new BuddyInfo("Todd", "1 Colonel By Drive", "123 456 789");
 		AddressBook book = new AddressBook();
 		book.addBuddy(buddy);
+		System.out.println(book.toString());
 		book.removeBuddy(buddy);
+		
 	}
 	
 	public AddressBook() {
@@ -49,5 +51,18 @@ public class AddressBook
 			book.remove(index);
 		}
 		
+	}
+	
+	public String toString()
+	{
+		String s = "ADDRESS BOOK - Contains " + book.size() + " buddies\n";
+		for(BuddyInfo buddy: book)
+		{
+			s += "Name: " + buddy.getName();
+			s += " Address: " + buddy.getAddress();
+			s += " Phone Number: " + buddy.getPhoneNumber() + "\n";
+			
+		}
+		return s;
 	}
 }
